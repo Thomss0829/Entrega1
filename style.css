@@ -1,155 +1,103 @@
 html, body {
   height: 100%;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 
 .contenidowebcompleto {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+
 main {
-    flex: 1;
-    background-image: URL(Fondo_Degrade.jpg);
-   
-}
-  .header{
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 5vw;
-    flex-wrap: wrap;
-    font-size: 20px;
-  }
-  
-  .header-izq a,
-  .header-der a {
-    justify-content: space-between;
-    margin-right: 0px;
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  
-  .header-centro img {
-    max-height: 40px;
-  }
-  
-  .busqueda-form {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 6px;
-    padding: 5px;
-  }
-  
-  .busqueda-form input {
-    border: none;
-    padding: 6px 10px;
-    outline: none;
-    width: 180px;
-    border-radius: 4px 0 0 4px;
-  }
-  
-  .busqueda-form button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 6px 8px;
-    font-size: 16px;
-  }
-  
-  .nav-container {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    padding: 12px 0;
-    gap: 40px;
-    border-top: 1px solid #333;
-  }
-  
-  .nav-container a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 8px 12px;
-    transition: background 0.3s;
-  }
-  
-  .nav-container a:hover {
-    background-color: white;
-    color: black;
-    border-radius: 4px;
-  }  
-@media (max-width: 768px) {
-    .header-container {
-      flex-direction: column;
-      align-items: stretch;
-    }
-  
-    .header-left, .header-right, .header-center {
-      justify-content: center;
-      text-align: center;
-      margin: 5px 0;
-    }
-  
-    .busqueda-form {
-      justify-content: center;
-    }
-  }
-form{
-  font-size: large;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: max-content;
-}
-.iniciarsesion{
-
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border: 20px solid rgb(0, 0, 0);
-    padding: 5px;
-    line-height: 34%;
+  flex: 1;
+  background-image: url(Fondo_Degrade.jpg);
 }
 
-.Footer{
-  line-height: 2;
+.header {
   background-color: black;
   color: white;
   display: flex;
-  padding: 20px 30px;
-}
-/*.productos {
-  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5vw;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;  centra las tarjetas 
-  padding: 20px;
+  font-size: 20px;
 }
-  */
-/* .producto {
-  flex: 1 1 200px; /* crece, reduce, y el ancho base es 200px 
-  max-width: 300px;
-  background-color: #f5f5f5;
-  border: 2px solid #ccc;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-  border-radius: 8px;
-}*/
+
+.header-izq a,
+.header-der a {
+  margin-right: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.header-centro img {
+  max-height: 40px;
+  max-width: 100%;
+  height: auto;
+}
+
+.busqueda-form {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.busqueda-form input {
+  border: none;
+  padding: 6px 10px;
+  outline: none;
+  width: 180px;
+  border-radius: 4px 0 0 4px;
+}
+
+.busqueda-form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 8px;
+  font-size: 16px;
+}
+
+.nav-container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+  gap: 40px;
+  border-top: 1px solid #333;
+}
+
+.nav-container a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.nav-container a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+}
 
 .productos {
   padding: 1.5rem;
   text-align: center;
-  background-color: #eaf4ff; 
+  background-color: #eaf4ff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
 }
 
 .titulo {
@@ -157,12 +105,6 @@ form{
   font-size: 2rem;
   margin-bottom: 1.5rem;
   font-weight: bold;
-}
-
-.productos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.5rem;
 }
 
 .producto {
@@ -185,4 +127,65 @@ form{
   border-radius: 5px;
   margin-bottom: 1rem;
   display: block;
+}
+
+.Footer {
+  line-height: 2;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .header-izq, .header-der, .header-centro {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .busqueda-form {
+    justify-content: center;
+    margin: auto;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-container a {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .producto {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .producto img {
+    aspect-ratio: 3 / 4;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .busqueda-form input {
+    width: 140px;
+  }
 }
