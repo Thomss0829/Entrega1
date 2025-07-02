@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Principal</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
@@ -15,10 +15,10 @@
     <header class="header">
       <div class="header-izq">
         <a href="Mi_Cuenta.html">👤 Mi cuenta</a>
-        <a href="#">🛒 Mi carrito</a>
+        <a href="carrito.html">🛒 Mi carrito <span id="contador-carrito">(0)</span></a>
       </div>
       <div class="header-centro">
-        <img id="id-logo-principal" src="logo.png" alt="Logo de mi sitio web" />
+        <a href="index.html"><img id="id-logo-principal" src="logo.png" alt="Logo de mi sitio web" /> </a>
       </div>
       <div class="header-der">
         <form class="busqueda-form">
@@ -31,34 +31,59 @@
     <nav class="nav-container">
       <a href="index.html">Inicio</a>
       <a href="Productos.html">Productos</a>
-      <a href="Contacto.html">Nuestro Contacto</a>
+      <a href="Contacto.html">Contáctanos</a>
       <a href="Devolucion.html">Políticas de Devolución</a>
     </nav>
-
+<!--HACER lista de prodcutos con un for en java, botón validar-->
     <main>
       <section>
         <h1 class="titulo">NOVEDADES</h1>
-        <section class="productos">
-          <div class="producto">
-            <a href="detalle_nier.html">
-              <img src="Nier_.jpg" alt="Portada Nier Automata Vol. 1" />
-            </a>
-            <h3>NIER: AUTOMATA VOL. 1</h3>
-            <p>$xxx</p>
-          </div>
-          <div class="producto">
-            <h3>Producto 2</h3>
-            <p>Descripción del producto 2</p>
-          </div>
-          <div class="producto">
-            <h3>Producto 3</h3>
-            <p>Descripción del producto 3</p>
-          </div>
-          <div class="producto">
-            <h3>Producto 4</h3>
-            <p>Descripción del producto 4</p>
-          </div>
-        </section>
+        <section class="productos" id="contenedor-productos">
+  <!-- Aquí se van a insertar dinámicamente -->
+</section>
+      </section>
+      <section>
+        <div class="vivonuevo">
+        <h4 class="titulo">VIVO NOVEDADES JULIO</h4>
+         <iframe src="https://www.youtube.com/embed/tn8WT4sSqX8?si=ukgZnaOHKSt3fA4y&amp;start=441" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </section>
+      <section>
+        <div class="reseñas-grid">
+          <h4 class="titulo">Reseñas de nuestro sitio web</h4>
+        <div class="card-reseña">
+          <p class="estrellas">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
+          <p>Lugar al que voy cada semana ,lo mejor es que tiene su propio lugar para estacionar</p>
+          <p><strong>- Next Level Gamer Shop</strong></p>
+        </div>
+        <div class="card-reseña">
+          <p class="estrellas">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
+          <p>Todo excelente como siempre ! Años comprándoles todo.</p>
+          <p><strong>- Matías Pavase</strong></p>
+        </div>
+        <div class="card-reseña">
+          <p class="estrellas">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
+          <p>Me encanta todo el material, pero me encantaría que publicaran obras de Warren Ellis como Transmetropolitan,The Authority o Planetary. Y más de Morrison,como Los Invisibles, Nameless, Seaguy,etc. Saludos! </p>
+          <p><strong>- augustoalmiron7727</strong></p>
+        </div>
+      </div>
       </section>
     </main>
 
@@ -87,6 +112,7 @@
       </footer>
     </section>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

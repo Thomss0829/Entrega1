@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contactanos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
             <div class="header-izq">
               <a href="Mi_Cuenta.html">👤 Mi cuenta</a>
-              <a href="#">🛒 Mi carrito</a>
+              <a href="carrito.html">🛒 Mi carrito <span id="contador-carrito">(0)</span></a>
             </div>
             <div class="header-centro">
-            <img id="id-logo-principal" src="logo.png" alt="Logo de mi sitio web">
+            <a href="index.html"><img id="id-logo-principal" src="logo.png" alt="Logo de mi sitio web" /> </a>
                 </div>
 
                 <div class="header-der">
@@ -28,11 +28,30 @@
     <nav class="nav-container">
         <a href="index.html">Inicio</a>
         <a href="Productos.html">Productos</a>
-        <a href="Contacto.html">Nuestro Contacto</a>
+        <a href="Contacto.html">Contáctanos</a>
         <a href="Devolucion.html">Políticas de Devolución</a>
     </nav>
     <main>
-        <p>A Completar</p>
+             <!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xqabnojj"
+  method="POST"
+>
+<div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            </div>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
     </main>
     <section class ="Footer">
     <footer>
