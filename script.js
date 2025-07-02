@@ -212,3 +212,56 @@ function generarProductos() {
     contenedor.appendChild(div);
   });
 }
+
+// Login funcional
+document.addEventListener("DOMContentLoaded", function () {
+  const formLogin = document.getElementById("form-login");
+  if (formLogin) {
+    formLogin.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const email = document.getElementById("id_email").value;
+      const contraseña = document.getElementById("id_contraseña").value;
+      const usuario = JSON.parse(localStorage.getItem("usuario"));
+
+      if (usuario && email === usuario.email && contraseña === usuario.contraseña) {
+        alert("Inicio de sesión exitoso");
+        localStorage.setItem("sesionIniciada", "true");
+        window.location.href = "index.html";
+      } else {
+        alert("Correo o contraseña incorrectos");
+      }
+    });
+  }
+
+  //Estado en header si la sesión iniciada
+  const sesionIniciada = localStorage.getItem("sesionIniciada");
+  if (sesionIniciada === "true") {
+    const cuentaLink = document.querySelector(".header-izq a[href='Mi_Cuenta.html']");
+    if (cuentaLink) cuentaLink.textContent = "👤 Mi perfil";
+  }
+
+  //"Creo una cuenta"
+  const formCrear = document.getElementById("form-crear-cuenta");
+  if (formCrear) {
+    formCrear.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const nuevoEmail = document.getElementById("nuevo_email").value;
+      const nuevaPass = document.getElementById("nueva_contraseña").value;
+
+      const nuevoUsuario = {
+        email: nuevoEmail,
+        contraseña: nuevaPass
+      };
+
+      localStorage.setItem("usuario", JSON.stringify(nuevoUsuario));
+      alert("Cuenta creada con éxito. Ahora podés iniciar sesión.");
+      window.location.href = "login.html";
+    });
+  }
+});
+
+//"cierro sesión"
+function cerrarSesion() {
+  localStorage.removeItem("sesionIniciada");
+  location.reload();
+}

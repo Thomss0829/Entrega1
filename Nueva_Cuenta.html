@@ -1,54 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Crear cuenta</title>
 </head>
 <body>
 <header class="header">
-            <div class="header-izq">
-              <a href="Mi_Cuenta.html">👤 Mi cuenta</a>
-              <a href="carrito.html">🛒 Mi carrito <span id="contador-carrito">(0)</span></a>
-            </div>
-            <div class="header-centro">
-            <img id="id-logo-principal" src="logo.png" alt="Logo de mi sitio web">
-                </div>
-
-                <div class="header-der">
-                    <form class="busqueda-form">
-                      <input type="text" placeholder="¿Qué estás buscando?">
-                      <button type="submit">🔍</button>
-                    </form>
-
-    </div>
-    </header>
-    
-    <nav class="nav-container">
-        <a href="index.html">Inicio</a>
-        <a href="Productos.html">Productos</a>
-        <a href="Contacto.html">Contáctanos</a>
-        <a href="Devolucion.html">Políticas de Devolución</a>
-    </nav>
-     <main>
-    <section class= "iniciarsesion">
-    <form action="" method="">
-<div>
-  <label for="email">Correo electrónico:</label>
-   <input type="email" id="id_email" name="email" placeholder="Ingrese su e-mail" required>
+  <div class="header-izq">
+    <a href="login.html">👤 Iniciar sesión</a>
   </div>
-<div>
-<label>
-  <label for="">Contraseña</label>
-  <input type="password" id="id_contraseña" name="contraseña" placeholder="Ingrese su contraseña">
-</div>
-<button type="submit">Crear Cuenta</button>
-<button onclick="location.href='Mi_Cuenta.html'">Ya tengo una cuenta</button>
-</form>
-</section>
-    </main>
- <section class="Footer">
+  <div class="header-centro">
+    <a href="index.html"><img id="id-logo-principal" src="logo.png" alt="Logo de mi sitio web" /> </a>
+  </div>
+</header>
+
+<main>
+  <section class="iniciarsesion">
+    <form id="form-crear-cuenta">
+      <div>
+        <label for="nuevo_email">Correo electrónico:</label>
+        <input type="email" id="nuevo_email" required />
+      </div>
+      <div>
+        <label for="nueva_contraseña">Contraseña:</label>
+        <input type="password" id="nueva_contraseña" required />
+      </div>
+      <button type="submit">Crear Cuenta</button>
+    </form>
+  </section>
+</main>
+
+<section class="Footer">
       <footer>
         <p id="Pie-Pag">© 2025 Mi sitio web. Todos los derechos reservados.</p>
         <div>Seguinos en nuestras redes sociales:</div>
@@ -72,5 +56,6 @@
         </div>
       </footer>
     </section>
+<script src="script.js"></script>
 </body>
 </html>
