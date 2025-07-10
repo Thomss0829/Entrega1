@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "NIER: AUTOMATA VOL. 1",
+    "description": "¡Una nueva serie dentro del universo del popular juego NieR: Automata!",
+    "amount": 100,
+    "price": 10000,
+    "imagen": "Nier_.jpg",
+    "link": "detalle_nier.html"
+  },
+  {
+    "id": "2",
+    "name": "Green Lantern: Caballeros Esmeraldas",
+    "description": "¡EL ENCUENTRO IMPOSIBLE DE DOS GREEN LANTERN!",
+    "amount": 100,
+    "price": 23000,
+    "imagen": "GLCOV.jpg",
+    "link": "detalle_GL.html"
+  },
+  {
+    "id": "3",
+    "name": "LIGA DE LA JUSTICIA INTERNACIONAL: EL VECTOR EXTREMISTA",
+    "description": "¡Peligros extremos!",
+    "amount": 100,
+    "price": 28000,
+    "imagen": "JLI6.jpg",
+    "link": "detalle_JLI6.html"
+  },
+  {
+    "id": "4",
+    "name": "STAR WARS: DARTH VADER LORD OSCURO VOL. 01",
+    "description": "Empieza justo después de Episodio III: La venganza de los Sith.",
+    "amount": 100,
+    "price": 37900,
+    "imagen": "DarthVaderCov.jpg",
+    "link": "detalle_darthvader.html"
+  }
+]

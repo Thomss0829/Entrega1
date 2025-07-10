@@ -34,6 +34,12 @@ main {
   padding: 10px 5vw;
   flex-wrap: wrap;
   font-size: 20px;
+  position: relative;
+}
+.header-centro {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header-izq a,
@@ -486,3 +492,40 @@ form button:hover {
     max-width: 240px;
   }
 }
+.enlace-detalle {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+
+.enlace-detalle img {
+  width: 100%;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.enlace-detalle h3 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.producto input[type="number"] {
+  width: 60px;
+  font-size: 1.2rem;
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.total-compra {
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1.5rem 2rem 1rem 0;
+  color: #333;
+}
+
+

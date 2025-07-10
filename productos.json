@@ -1,0 +1,93 @@
+[
+  {
+    "id": "1",
+    "name": "NIER: AUTOMATA VOL. 1",
+    "description": "¡Una nueva serie dentro del universo del popular juego NieR: Automata!",
+    "amount": 100,
+    "price": 10000,
+    "imagen": "Nier_.jpg",
+    "link": "detalle_nier.html"
+  },
+  {
+    "id": "2",
+    "name": "Green Lantern: Caballeros Esmeraldas",
+    "description": "¡EL ENCUENTRO IMPOSIBLE DE DOS GREEN LANTERN!",
+    "amount": 100,
+    "price": 23000,
+    "imagen": "GLCOV.jpg",
+    "link": "detalle_GL.html"
+  },
+  {
+    "id": "3",
+    "name": "LIGA DE LA JUSTICIA INTERNACIONAL: EL VECTOR EXTREMISTA",
+    "description": "¡Peligros extremos!",
+    "amount": 100,
+    "price": 28000,
+    "imagen": "JLI6.jpg",
+    "link": "detalle_JLI6.html"
+  },
+  {
+    "id": "4",
+    "name": "STAR WARS: DARTH VADER LORD OSCURO VOL. 01",
+    "description": "Empieza justo después de Episodio III: La venganza de los Sith.",
+    "amount": 100,
+    "price": 37900,
+    "imagen": "DarthVaderCov.jpg",
+    "link": "detalle_darthvader.html"
+  },
+  {
+    "id": "5",
+    "name": "LA TIERRA DE LAS GEMAS VOL. 9",
+    "description": "Fosfofilita convenció a un grupo de gemas para viajar a la Luna y traicionar a Sensei.",
+    "amount": 100,
+    "price": 12000,
+    "imagen": "la_tierra_de_las_gemas_9Cov.jpg",
+    "link": "detalle_Gemitas9.html"
+  },
+  {
+    "id": "6",
+    "name": "HORA CERO: ESPECIAL 30 ANIVERSARIO",
+    "description": "Hace 30 años, un héroe cayó en desgracia.",
+    "amount": 100,
+    "price": 25000,
+    "imagen": "hora_cero_30_aniversario_cov.jpg",
+    "link": "detalle_HoraCeroAniversario.html"
+  },
+  {
+    "id": "7",
+    "name": "LIGA DE LA JUSTICIA ILIMITADA: EN EL INFIERNO",
+    "description": "La Liga está de regreso y más grande que nunca!",
+    "amount": 100,
+    "price": 18000,
+    "imagen": "liga_de_la_justicia_cov.png",
+    "link": "detalle_Liga_Ilimitada_2025.html"
+  },
+  {
+    "id": "8",
+    "name": "MIGHTY MORPHIN POWER RANGERS: PINK Y PR RANGER SLAYER",
+    "description": "¡LA PRIMERA PINK RANGER REGRESA!",
+    "amount": 100,
+    "price": 23000,
+    "imagen": "power-rangers-pink-cov.jpg",
+    "link": "detalle_MMPRPink.html"
+  },
+  {
+    "id": "9",
+    "name": "Sandman Vol. 1: Preludios y Nocturnos",
+    "description": "SANDMAN, estableció el estándar para la fantasía lírica y madura en la era moderna de los cómics.",
+    "amount": 100,
+    "price": 23000,
+    "imagen": "SandmanVol1Cov.jpg",
+    "link": "detalle_Sandman1.html"
+  },
+  {
+    "id": "10",
+    "name": "Superman: El Mundo",
+    "description": "El héroe que inspiró a generaciones, Superman, siempre se esforzó por proteger no solo a Metrópolis, sino a todo el mundo. ",
+    "amount": 100,
+    "price": 24000,
+    "imagen": "Superman_El_MundoCov.jpg",
+    "link": "detalle_Superman_El_Mundo.html"
+  }
+
+]

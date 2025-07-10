@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Principal</title>
+  <meta name="description" content="Sitio web de venta de libros, cómics y mangas." />
+  <meta name="keywords" content="libros, cómics, mangas, tienda online, novedades, ovni press, ecommerce" />
+  <meta name="author" content="Juan Carlos Thomas Sosa" />
+  <title>Tienda de Cómics</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
@@ -14,17 +17,19 @@
   <div class="contenidowebcompleto">
     <header class="header">
       <div class="header-izq">
-        <a href="Mi_Cuenta.html">👤 Mi cuenta</a>
+         <!-- <a href="Mi_Cuenta.html">👤 Mi cuenta</a>-->
         <a href="carrito.html">🛒 Mi carrito <span id="contador-carrito">(0)</span></a>
       </div>
       <div class="header-centro">
         <a href="index.html"><img id="id-logo-principal" src="logo.png" alt="Logo de mi sitio web" /> </a>
       </div>
       <div class="header-der">
-        <form class="busqueda-form">
-          <input type="text" placeholder="¿Qué estás buscando?" />
+        <!--
+        <form id="form-busqueda"      class="busqueda-form">
+          <input id="input-busqueda" type="text" placeholder="¿Qué estás buscando?" />
           <button type="submit">🔍</button>
         </form>
+      -->
       </div>
     </header>
 
@@ -38,9 +43,8 @@
     <main>
       <section>
         <h1 class="titulo">NOVEDADES</h1>
-        <section class="productos" id="contenedor-productos">
-  <!-- Aquí se van a insertar dinámicamente -->
-</section>
+        <section class="productos" id="contenedor-novedades"
+         data-json="novedades.json"></section>
       </section>
       <section>
         <div class="vivonuevo">
