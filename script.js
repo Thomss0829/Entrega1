@@ -194,20 +194,25 @@ function cargarProductosDesdeAPI(jsonPath, contenedor) {
     })
     .catch(err => console.error("Error al cargar productos:", err));
 }
-document.addEventListener("keydown", function (event) {
-  const step = 50; // cantidad de píxeles por movimiento
+
+window.addEventListener("keydown", function (event) {
+  const step = 50; 
 
   switch (event.key) {
     case "ArrowUp":
+      event.preventDefault(); 
       window.scrollBy(0, -step);
       break;
     case "ArrowDown":
+      event.preventDefault();
       window.scrollBy(0, step);
       break;
     case "ArrowLeft":
+      event.preventDefault();
       window.scrollBy(-step, 0);
       break;
     case "ArrowRight":
+      event.preventDefault();
       window.scrollBy(step, 0);
       break;
   }
